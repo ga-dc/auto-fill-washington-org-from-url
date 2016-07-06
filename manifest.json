@@ -3,11 +3,22 @@
   "name": "utmify",
   "description": "Generate and display utm code links",
   "version": "1.0",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  },
+  "web_accessible_resources": ["options.html"],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "content_scripts": [
     {
       "run_at" :"document_end",
       "matches": ["https://generalassemb.ly/education/*"],
-      "js": ["background.js"]
+      "js": ["app.js"],
+      "css": ["app.css"]
     }
   ]
 }
