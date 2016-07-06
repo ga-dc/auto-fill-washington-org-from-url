@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "utmify",
+  "description": "Generate and display utm code links",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at" :"document_end",
+      "matches": ["https://generalassemb.ly/education/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
