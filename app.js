@@ -44,7 +44,8 @@ function eventInfo(url, $error, callback){
       eventtypeid: '1',
       listingID: '15948',
       categories: '101',
-      udf_386: '1702'
+      udf_386: '1702',
+      recurType: '0'
     }
     callback(out)
     } catch (e) {
