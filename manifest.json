@@ -1,22 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "utmify",
-  "description": "Generate and display utm code links",
-  "version": "1.2",
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true,
-    "open_in_tab": true
-  },
-  "web_accessible_resources": ["options.html"],
+  "name": "auto-fill-washington-org-from-url",
+  "description": "same as the name",
+  "version": "1.0",
   "permissions": [
-    "storage",
     "tabs"
   ],
   "content_scripts": [
     {
       "run_at" :"document_end",
-      "matches": ["https://generalassemb.ly/education/*"],
+      "matches": ["http://extranet.washingtondc.simpleviewcrm.com/mem/calendar/index.cfm?action=form"],
       "js": ["app.js"],
       "css": ["app.css"]
     }
